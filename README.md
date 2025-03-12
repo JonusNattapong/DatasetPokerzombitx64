@@ -21,6 +21,9 @@ Each poker hand is stored in a structured format that includes:
 - Complete action sequence (bets, raises, calls, folds)
 - Showdown results when applicable
 
+### Data Source
+The dataset is primarily compiled from `output.txt` files that contain poker hand histories. These text files are processed and converted into structured formats (CSV, JSON) for easier analysis. The original `output.txt` files are preserved in the raw_data directory.
+
 ## Usage
 This dataset can be used for:
 - Developing poker strategy algorithms
@@ -28,13 +31,22 @@ This dataset can be used for:
 - Analyzing player tendencies and game patterns
 - Simulating poker scenarios and outcomes
 
+### Sample Data Table
 
-![images](images/image.png)
+| Hand ID | Player | Position | Stack | Action | Street | Amount | Pot Size |
+|---------|--------|----------|-------|--------|--------|--------|----------|
+| H001    | Player1| BTN     | $100  | Raise  | Preflop| $3.5   | $5.0     |
+| H001    | Player2| SB      | $97   | Call   | Preflop| $2.5   | $5.0     |
+| H001    | Player1| BTN     | $96.5 | Check  | Flop   | $0     | $5.0     |
+| H001    | Player2| SB      | $94.5 | Bet    | Flop   | $3.5   | $8.5     |
+| H001    | Player1| BTN     | $96.5 | Fold   | Flop   | $0     | $8.5     |
+| H002    | Player3| CO      | $120  | Raise  | Preflop| $4.0   | $6.0     |
+| H002    | Player1| BTN     | $96.5 | Call   | Preflop| $4.0   | $10.0    |
+
+![images](sample_data/image.png)
 
 
-![csv](images/image0.png)
-
-
+![csv](sample_data/image0.png)
 
 ## Getting Started
 ```python
