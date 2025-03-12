@@ -392,7 +392,19 @@ def store_round(GAME: int, HAND: int, unstructured_data: List[List[Dict]], mylog
 
 def tourn_id(line: str) -> int:
     """Extract tournament ID"""
-    match = re.search(r'#(\d+),', line)
+    match = re.search(r"Hand #\d+: Tournament #(\d+)", line)
+    return int(match.group(1)) if match else 0
+def tourn_id(line: str) -> int:
+    """Extract tournament ID"""
+    match = re.search(r"Hand #\d+: Tournament #(\d+)", line)
+    return int(match.group(1)) if match else 0
+def tourn_id(line: str) -> int:
+    """Extract tournament ID"""
+    match = re.search(r"Hand #\d+: Tournament #(\d+)", line)
+    return int(match.group(1)) if match else 0
+def tourn_id(line: str) -> int:
+    """Extract tournament ID"""
+    match = re.search(r"Hand #\d+: Tournament #(\d+)", line)
     return int(match.group(1)) if match else 0
 
 
@@ -419,16 +431,63 @@ def chairs(line: str) -> int:
 
 def get_board(line: str) -> str:
     """Extract board cards"""
-    match = re.search(r'\[(.*?)\]', line)
-    if match:
-        return match.group(1)
+    if "*** TURN ***" in line:
+        match = re.search(r"\[.*?\] \[(.*?)\]", line)
+        return match.group(1) if match else "-"
+    else:
+        match = re.search(r"\[(.*?)\]", line)
+        return match.group(1) if match else ("0" if "*** SUMMARY ***" in line else "-")
+def get_board(line: str) -> str:
+    """Extract board cards"""
+    if "*** TURN ***" in line:
+        match = re.search(r"\[.*?\] \[(.*?)\]", line)
+        return match.group(1) if match else "-"
+    else:
+        match = re.search(r"\[(.*?)\]", line)
+        return match.group(1) if match else ("0" if "*** SUMMARY ***" in line else "-")
+def get_board(line: str) -> str:
+    """Extract board cards"""
+    if "*** TURN ***" in line:
+        match = re.search(r"\[.*?\] \[(.*?)\]", line)
+        return match.group(1) if match else "-"
+    else:
+        match = re.search(r"\[(.*?)\]", line)
+        return match.group(1) if match else ("0" if "*** SUMMARY ***" in line else "-")
+def get_board(line: str) -> str:
+    """Extract board cards"""
+    if "*** TURN ***" in line:
+        match = re.search(r"\[.*?\] \[(.*?)\]", line)
+        return match.group(1) if match else "-"
+    else:
+        match = re.search(r"\[(.*?)\]", line)
+        return match.group(1) if match else ("0" if "*** SUMMARY ***" in line else "-")
+def get_board(line: str) -> str:
+    """Extract board cards"""
+    if "*** TURN ***" in line:
+        match = re.search(r"\[.*?\] \[(.*?)\]", line)
+        return match.group(1) if match else "-"
+    else:
+        match = re.search(r"\[(.*?)\]", line)
+        return match.group(1) if match else ("0" if "*** SUMMARY ***" in line else "-")
     return "0" if "*** SUMMARY ***" in line else "-"
 
 
 def get_combination(line: str) -> str:
     """Extract hand combination"""
-    if "Seat " in line or " folded " in line:
-        return ""
+    match = re.search(r"\(([^)]+)\)", line)
+    return match.group(1) if match else ""
+def get_combination(line: str) -> str:
+    """Extract hand combination"""
+    match = re.search(r"\(([^)]+)\)", line)
+    return match.group(1) if match else ""
+def get_combination(line: str) -> str:
+    """Extract hand combination"""
+    match = re.search(r"\(([^)]+)\)", line)
+    return match.group(1) if match else ""
+def get_combination(line: str) -> str:
+    """Extract hand combination"""
+    match = re.search(r"\(([^)]+)\)", line)
+    return match.group(1) if match else ""
     match = re.search(r' with (.*)', line)
     return match.group(1) if match else ""
 

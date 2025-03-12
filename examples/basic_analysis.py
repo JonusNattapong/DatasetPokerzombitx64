@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from pokerdata import PokerVisualizer, analyze_player_range
 
 # Set path to your data
-DATA_PATH = "../result.csv"
+DATA_PATH = "data/output/poker_data.csv"
 
 def run_basic_analysis():
     """Run a basic analysis on poker data."""

@@ -6,14 +6,14 @@ Seat 3: Player3 (1690 in chips)
 Player1: posts small blind 20
 Player2: posts big blind 40
 *** HOLE CARDS ***
-Dealt to Player1 [6d Qc]
+Dealt to Player1 [Th Jc]
 Player3: folds 
 Player1: calls 20
 Player2: checks 
-*** FLOP *** [Td 2s 2d]
+*** FLOP *** [6d 8s 6d]
 Player1: checks 
 Player2: checks 
-*** TURN *** [Td 2s 2d] [Js]
+*** TURN *** [6d 8s 6d] [Qs]
 Player1: checks 
 Player2: bets 40
 Player1: folds 
@@ -22,7 +22,7 @@ Player2 collected 100 from pot
 Player2: doesn't show hand 
 *** SUMMARY ***
 Total pot 100 | Rake 0 
-Board [Td 2s 2d Js]
+Board [6d 8s 6d Qs]
 Seat 1: Player1 (small blind) folded on the Turn
 Seat 2: Player2 (big blind) collected (100)
 Seat 3: Player3 folded before Flop (didn't bet)
