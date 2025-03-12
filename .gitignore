@@ -172,3 +172,22 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Data files
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Generated visualizations
+visualizations/

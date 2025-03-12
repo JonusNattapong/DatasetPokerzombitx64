@@ -106,8 +106,8 @@ def build_dataset(unstructured_data: List[List[Dict]], mylogin: str, n_workers: 
     
     # Use parallel processing to speed up data building
     with ProcessPoolExecutor(max_workers=n_workers) as executor:
-        results = list(executor.map(lambda args: store_round(*args), tasks))
-    
+        results = list(executor.map(store_round, *zip(*tasks)))
+
     # Combine all results into a single DataFrame
     df = pd.concat(results, ignore_index=True)
     return df
