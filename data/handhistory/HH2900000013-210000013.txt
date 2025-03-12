@@ -1,0 +1,28 @@
+PokerStars Hand #210000013: Tournament #2900000013, $0.25+$0.02 USD Hold'em No Limit - Level 4 (40/80) - 2023/01/15 11:13:00
+Table '2900000013 13' 9-max Seat #2 is the button
+Seat 1: Player1 (1240 in chips) 
+Seat 2: Player2 (1395 in chips) 
+Seat 3: Player3 (1670 in chips) 
+Player1: posts small blind 40
+Player2: posts big blind 80
+*** HOLE CARDS ***
+Dealt to Player1 [Ac 6c]
+Player3: folds 
+Player1: calls 40
+Player2: checks 
+*** FLOP *** [Tc 3h 5d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Tc 3h 5d] [Ac]
+Player1: checks 
+Player2: bets 80
+Player1: folds 
+Uncalled bet (80) returned to Player2
+Player2 collected 200 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 200 | Rake 0 
+Board [Tc 3h 5d Ac]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (200)
+Seat 3: Player3 folded before Flop (didn't bet)

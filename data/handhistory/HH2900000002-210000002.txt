@@ -1,0 +1,28 @@
+PokerStars Hand #210000002: Tournament #2900000002, $0.25+$0.02 USD Hold'em No Limit - Level 3 (30/60) - 2023/01/15 12:02:00
+Table '2900000002 2' 6-max Seat #3 is the button
+Seat 1: Player1 (1460 in chips) 
+Seat 2: Player2 (1230 in chips) 
+Seat 3: Player3 (1780 in chips) 
+Player1: posts small blind 30
+Player2: posts big blind 60
+*** HOLE CARDS ***
+Dealt to Player1 [Js 4s]
+Player3: folds 
+Player1: calls 30
+Player2: checks 
+*** FLOP *** [Qh Kd 9c]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Qh Kd 9c] [8s]
+Player1: checks 
+Player2: bets 60
+Player1: folds 
+Uncalled bet (60) returned to Player2
+Player2 collected 150 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 150 | Rake 0 
+Board [Qh Kd 9c 8s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (150)
+Seat 3: Player3 folded before Flop (didn't bet)

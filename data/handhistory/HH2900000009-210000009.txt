@@ -1,0 +1,28 @@
+PokerStars Hand #210000009: Tournament #2900000009, $0.25+$0.02 USD Hold'em No Limit - Level 10 (100/200) - 2023/01/15 19:09:00
+Table '2900000009 9' 9-max Seat #1 is the button
+Seat 1: Player1 (1320 in chips) 
+Seat 2: Player2 (1335 in chips) 
+Seat 3: Player3 (1710 in chips) 
+Player1: posts small blind 100
+Player2: posts big blind 200
+*** HOLE CARDS ***
+Dealt to Player1 [Ac Td]
+Player3: folds 
+Player1: calls 100
+Player2: checks 
+*** FLOP *** [8d 9c Jh]
+Player1: checks 
+Player2: checks 
+*** TURN *** [8d 9c Jh] [2c]
+Player1: checks 
+Player2: bets 200
+Player1: folds 
+Uncalled bet (200) returned to Player2
+Player2 collected 500 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 500 | Rake 0 
+Board [8d 9c Jh 2c]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (500)
+Seat 3: Player3 folded before Flop (didn't bet)

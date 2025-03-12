@@ -1,0 +1,900 @@
+=== Session: HH2900000001-210000001.txt ===
+PokerStars Hand #210000001: Tournament #2900000001, $0.25+$0.02 USD Hold'em No Limit - Level 2 (20/40) - 2023/01/15 11:01:00
+Table '2900000001 1' 9-max Seat #2 is the button
+Seat 1: Player1 (1480 in chips) 
+Seat 2: Player2 (1215 in chips) 
+Seat 3: Player3 (1790 in chips) 
+Player1: posts small blind 20
+Player2: posts big blind 40
+*** HOLE CARDS ***
+Dealt to Player1 [6h Tc]
+Player3: folds 
+Player1: calls 20
+Player2: checks 
+*** FLOP *** [7d 5d Ah]
+Player1: checks 
+Player2: checks 
+*** TURN *** [7d 5d Ah] [4d]
+Player1: checks 
+Player2: bets 40
+Player1: folds 
+Uncalled bet (40) returned to Player2
+Player2 collected 100 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 100 | Rake 0 
+Board [7d 5d Ah 4d]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (100)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000002-210000002.txt ===
+PokerStars Hand #210000002: Tournament #2900000002, $0.25+$0.02 USD Hold'em No Limit - Level 3 (30/60) - 2023/01/15 12:02:00
+Table '2900000002 2' 6-max Seat #3 is the button
+Seat 1: Player1 (1460 in chips) 
+Seat 2: Player2 (1230 in chips) 
+Seat 3: Player3 (1780 in chips) 
+Player1: posts small blind 30
+Player2: posts big blind 60
+*** HOLE CARDS ***
+Dealt to Player1 [Js 4s]
+Player3: folds 
+Player1: calls 30
+Player2: checks 
+*** FLOP *** [Qh Kd 9c]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Qh Kd 9c] [8s]
+Player1: checks 
+Player2: bets 60
+Player1: folds 
+Uncalled bet (60) returned to Player2
+Player2 collected 150 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 150 | Rake 0 
+Board [Qh Kd 9c 8s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (150)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000003-210000003.txt ===
+PokerStars Hand #210000003: Tournament #2900000003, $0.25+$0.02 USD Hold'em No Limit - Level 4 (40/80) - 2023/01/15 13:03:00
+Table '2900000003 3' 9-max Seat #1 is the button
+Seat 1: Player1 (1440 in chips) 
+Seat 2: Player2 (1245 in chips) 
+Seat 3: Player3 (1770 in chips) 
+Player1: posts small blind 40
+Player2: posts big blind 80
+*** HOLE CARDS ***
+Dealt to Player1 [3h Ac]
+Player3: folds 
+Player1: calls 40
+Player2: checks 
+*** FLOP *** [Td 3h Qd]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Td 3h Qd] [9d]
+Player1: checks 
+Player2: bets 80
+Player1: folds 
+Uncalled bet (80) returned to Player2
+Player2 collected 200 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 200 | Rake 0 
+Board [Td 3h Qd 9d]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (200)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000004-210000004.txt ===
+PokerStars Hand #210000004: Tournament #2900000004, $0.25+$0.02 USD Hold'em No Limit - Level 5 (50/100) - 2023/01/15 14:04:00
+Table '2900000004 4' 6-max Seat #2 is the button
+Seat 1: Player1 (1420 in chips) 
+Seat 2: Player2 (1260 in chips) 
+Seat 3: Player3 (1760 in chips) 
+Player1: posts small blind 50
+Player2: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Player1 [9c 5h]
+Player3: folds 
+Player1: calls 50
+Player2: checks 
+*** FLOP *** [2s Qh 5h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2s Qh 5h] [Ad]
+Player1: checks 
+Player2: bets 100
+Player1: folds 
+Uncalled bet (100) returned to Player2
+Player2 collected 250 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 250 | Rake 0 
+Board [2s Qh 5h Ad]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (250)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000005-210000005.txt ===
+PokerStars Hand #210000005: Tournament #2900000005, $0.25+$0.02 USD Hold'em No Limit - Level 6 (60/120) - 2023/01/15 15:05:00
+Table '2900000005 5' 9-max Seat #3 is the button
+Seat 1: Player1 (1400 in chips) 
+Seat 2: Player2 (1275 in chips) 
+Seat 3: Player3 (1750 in chips) 
+Player1: posts small blind 60
+Player2: posts big blind 120
+*** HOLE CARDS ***
+Dealt to Player1 [5s 2h]
+Player3: folds 
+Player1: calls 60
+Player2: checks 
+*** FLOP *** [Td 9s 6h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Td 9s 6h] [3s]
+Player1: checks 
+Player2: bets 120
+Player1: folds 
+Uncalled bet (120) returned to Player2
+Player2 collected 300 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 300 | Rake 0 
+Board [Td 9s 6h 3s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (300)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000006-210000006.txt ===
+PokerStars Hand #210000006: Tournament #2900000006, $0.25+$0.02 USD Hold'em No Limit - Level 7 (70/140) - 2023/01/15 16:06:00
+Table '2900000006 6' 6-max Seat #1 is the button
+Seat 1: Player1 (1380 in chips) 
+Seat 2: Player2 (1290 in chips) 
+Seat 3: Player3 (1740 in chips) 
+Player1: posts small blind 70
+Player2: posts big blind 140
+*** HOLE CARDS ***
+Dealt to Player1 [Ah Qh]
+Player3: folds 
+Player1: calls 70
+Player2: checks 
+*** FLOP *** [7c Kh 2s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [7c Kh 2s] [Qd]
+Player1: checks 
+Player2: bets 140
+Player1: folds 
+Uncalled bet (140) returned to Player2
+Player2 collected 350 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 350 | Rake 0 
+Board [7c Kh 2s Qd]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (350)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000007-210000007.txt ===
+PokerStars Hand #210000007: Tournament #2900000007, $0.25+$0.02 USD Hold'em No Limit - Level 8 (80/160) - 2023/01/15 17:07:00
+Table '2900000007 7' 9-max Seat #2 is the button
+Seat 1: Player1 (1360 in chips) 
+Seat 2: Player2 (1305 in chips) 
+Seat 3: Player3 (1730 in chips) 
+Player1: posts small blind 80
+Player2: posts big blind 160
+*** HOLE CARDS ***
+Dealt to Player1 [Qd 7h]
+Player3: folds 
+Player1: calls 80
+Player2: checks 
+*** FLOP *** [2c 4d 8c]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2c 4d 8c] [Tc]
+Player1: checks 
+Player2: bets 160
+Player1: folds 
+Uncalled bet (160) returned to Player2
+Player2 collected 400 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 400 | Rake 0 
+Board [2c 4d 8c Tc]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (400)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000008-210000008.txt ===
+PokerStars Hand #210000008: Tournament #2900000008, $0.25+$0.02 USD Hold'em No Limit - Level 9 (90/180) - 2023/01/15 18:08:00
+Table '2900000008 8' 6-max Seat #3 is the button
+Seat 1: Player1 (1340 in chips) 
+Seat 2: Player2 (1320 in chips) 
+Seat 3: Player3 (1720 in chips) 
+Player1: posts small blind 90
+Player2: posts big blind 180
+*** HOLE CARDS ***
+Dealt to Player1 [4c Kc]
+Player3: folds 
+Player1: calls 90
+Player2: checks 
+*** FLOP *** [3d 9d 4d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [3d 9d 4d] [8c]
+Player1: checks 
+Player2: bets 180
+Player1: folds 
+Uncalled bet (180) returned to Player2
+Player2 collected 450 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 450 | Rake 0 
+Board [3d 9d 4d 8c]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (450)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000009-210000009.txt ===
+PokerStars Hand #210000009: Tournament #2900000009, $0.25+$0.02 USD Hold'em No Limit - Level 10 (100/200) - 2023/01/15 19:09:00
+Table '2900000009 9' 9-max Seat #1 is the button
+Seat 1: Player1 (1320 in chips) 
+Seat 2: Player2 (1335 in chips) 
+Seat 3: Player3 (1710 in chips) 
+Player1: posts small blind 100
+Player2: posts big blind 200
+*** HOLE CARDS ***
+Dealt to Player1 [Ac Td]
+Player3: folds 
+Player1: calls 100
+Player2: checks 
+*** FLOP *** [8d 9c Jh]
+Player1: checks 
+Player2: checks 
+*** TURN *** [8d 9c Jh] [2c]
+Player1: checks 
+Player2: bets 200
+Player1: folds 
+Uncalled bet (200) returned to Player2
+Player2 collected 500 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 500 | Rake 0 
+Board [8d 9c Jh 2c]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (500)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000010-210000010.txt ===
+PokerStars Hand #210000010: Tournament #2900000010, $0.25+$0.02 USD Hold'em No Limit - Level 1 (10/20) - 2023/01/15 20:10:00
+Table '2900000010 10' 6-max Seat #2 is the button
+Seat 1: Player1 (1300 in chips) 
+Seat 2: Player2 (1350 in chips) 
+Seat 3: Player3 (1700 in chips) 
+Player1: posts small blind 10
+Player2: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Player1 [6d 7c]
+Player3: folds 
+Player1: calls 10
+Player2: checks 
+*** FLOP *** [2h 3c Tc]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2h 3c Tc] [7c]
+Player1: checks 
+Player2: bets 20
+Player1: folds 
+Uncalled bet (20) returned to Player2
+Player2 collected 50 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 50 | Rake 0 
+Board [2h 3c Tc 7c]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (50)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000011-210000011.txt ===
+PokerStars Hand #210000011: Tournament #2900000011, $0.25+$0.02 USD Hold'em No Limit - Level 2 (20/40) - 2023/01/15 21:11:00
+Table '2900000011 11' 9-max Seat #3 is the button
+Seat 1: Player1 (1280 in chips) 
+Seat 2: Player2 (1365 in chips) 
+Seat 3: Player3 (1690 in chips) 
+Player1: posts small blind 20
+Player2: posts big blind 40
+*** HOLE CARDS ***
+Dealt to Player1 [6d Qc]
+Player3: folds 
+Player1: calls 20
+Player2: checks 
+*** FLOP *** [Td 2s 2d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Td 2s 2d] [Js]
+Player1: checks 
+Player2: bets 40
+Player1: folds 
+Uncalled bet (40) returned to Player2
+Player2 collected 100 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 100 | Rake 0 
+Board [Td 2s 2d Js]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (100)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000012-210000012.txt ===
+PokerStars Hand #210000012: Tournament #2900000012, $0.25+$0.02 USD Hold'em No Limit - Level 3 (30/60) - 2023/01/15 10:12:00
+Table '2900000012 12' 6-max Seat #1 is the button
+Seat 1: Player1 (1260 in chips) 
+Seat 2: Player2 (1380 in chips) 
+Seat 3: Player3 (1680 in chips) 
+Player1: posts small blind 30
+Player2: posts big blind 60
+*** HOLE CARDS ***
+Dealt to Player1 [4h Js]
+Player3: folds 
+Player1: calls 30
+Player2: checks 
+*** FLOP *** [9d Ad Ah]
+Player1: checks 
+Player2: checks 
+*** TURN *** [9d Ad Ah] [9s]
+Player1: checks 
+Player2: bets 60
+Player1: folds 
+Uncalled bet (60) returned to Player2
+Player2 collected 150 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 150 | Rake 0 
+Board [9d Ad Ah 9s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (150)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000013-210000013.txt ===
+PokerStars Hand #210000013: Tournament #2900000013, $0.25+$0.02 USD Hold'em No Limit - Level 4 (40/80) - 2023/01/15 11:13:00
+Table '2900000013 13' 9-max Seat #2 is the button
+Seat 1: Player1 (1240 in chips) 
+Seat 2: Player2 (1395 in chips) 
+Seat 3: Player3 (1670 in chips) 
+Player1: posts small blind 40
+Player2: posts big blind 80
+*** HOLE CARDS ***
+Dealt to Player1 [Ac 6c]
+Player3: folds 
+Player1: calls 40
+Player2: checks 
+*** FLOP *** [Tc 3h 5d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Tc 3h 5d] [Ac]
+Player1: checks 
+Player2: bets 80
+Player1: folds 
+Uncalled bet (80) returned to Player2
+Player2 collected 200 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 200 | Rake 0 
+Board [Tc 3h 5d Ac]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (200)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000014-210000014.txt ===
+PokerStars Hand #210000014: Tournament #2900000014, $0.25+$0.02 USD Hold'em No Limit - Level 5 (50/100) - 2023/01/15 12:14:00
+Table '2900000014 14' 6-max Seat #3 is the button
+Seat 1: Player1 (1220 in chips) 
+Seat 2: Player2 (1410 in chips) 
+Seat 3: Player3 (1660 in chips) 
+Player1: posts small blind 50
+Player2: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Player1 [6h 5s]
+Player3: folds 
+Player1: calls 50
+Player2: checks 
+*** FLOP *** [2s 3d Qc]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2s 3d Qc] [8s]
+Player1: checks 
+Player2: bets 100
+Player1: folds 
+Uncalled bet (100) returned to Player2
+Player2 collected 250 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 250 | Rake 0 
+Board [2s 3d Qc 8s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (250)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000015-210000015.txt ===
+PokerStars Hand #210000015: Tournament #2900000015, $0.25+$0.02 USD Hold'em No Limit - Level 6 (60/120) - 2023/01/15 13:15:00
+Table '2900000015 15' 9-max Seat #1 is the button
+Seat 1: Player1 (1200 in chips) 
+Seat 2: Player2 (1425 in chips) 
+Seat 3: Player3 (1650 in chips) 
+Player1: posts small blind 60
+Player2: posts big blind 120
+*** HOLE CARDS ***
+Dealt to Player1 [6c Jh]
+Player3: folds 
+Player1: calls 60
+Player2: checks 
+*** FLOP *** [3h 3c 9s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [3h 3c 9s] [9d]
+Player1: checks 
+Player2: bets 120
+Player1: folds 
+Uncalled bet (120) returned to Player2
+Player2 collected 300 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 300 | Rake 0 
+Board [3h 3c 9s 9d]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (300)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000016-210000016.txt ===
+PokerStars Hand #210000016: Tournament #2900000016, $0.25+$0.02 USD Hold'em No Limit - Level 7 (70/140) - 2023/01/15 14:16:00
+Table '2900000016 16' 6-max Seat #2 is the button
+Seat 1: Player1 (1180 in chips) 
+Seat 2: Player2 (1440 in chips) 
+Seat 3: Player3 (1640 in chips) 
+Player1: posts small blind 70
+Player2: posts big blind 140
+*** HOLE CARDS ***
+Dealt to Player1 [4d Jh]
+Player3: folds 
+Player1: calls 70
+Player2: checks 
+*** FLOP *** [7c 3d 3h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [7c 3d 3h] [Qc]
+Player1: checks 
+Player2: bets 140
+Player1: folds 
+Uncalled bet (140) returned to Player2
+Player2 collected 350 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 350 | Rake 0 
+Board [7c 3d 3h Qc]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (350)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000017-210000017.txt ===
+PokerStars Hand #210000017: Tournament #2900000017, $0.25+$0.02 USD Hold'em No Limit - Level 8 (80/160) - 2023/01/15 15:17:00
+Table '2900000017 17' 9-max Seat #3 is the button
+Seat 1: Player1 (1160 in chips) 
+Seat 2: Player2 (1455 in chips) 
+Seat 3: Player3 (1630 in chips) 
+Player1: posts small blind 80
+Player2: posts big blind 160
+*** HOLE CARDS ***
+Dealt to Player1 [Jd Jd]
+Player3: folds 
+Player1: calls 80
+Player2: checks 
+*** FLOP *** [5c Ac 8c]
+Player1: checks 
+Player2: checks 
+*** TURN *** [5c Ac 8c] [Qs]
+Player1: checks 
+Player2: bets 160
+Player1: folds 
+Uncalled bet (160) returned to Player2
+Player2 collected 400 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 400 | Rake 0 
+Board [5c Ac 8c Qs]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (400)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000018-210000018.txt ===
+PokerStars Hand #210000018: Tournament #2900000018, $0.25+$0.02 USD Hold'em No Limit - Level 9 (90/180) - 2023/01/15 16:18:00
+Table '2900000018 18' 6-max Seat #1 is the button
+Seat 1: Player1 (1140 in chips) 
+Seat 2: Player2 (1470 in chips) 
+Seat 3: Player3 (1620 in chips) 
+Player1: posts small blind 90
+Player2: posts big blind 180
+*** HOLE CARDS ***
+Dealt to Player1 [9s 8h]
+Player3: folds 
+Player1: calls 90
+Player2: checks 
+*** FLOP *** [8h As 3h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [8h As 3h] [5s]
+Player1: checks 
+Player2: bets 180
+Player1: folds 
+Uncalled bet (180) returned to Player2
+Player2 collected 450 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 450 | Rake 0 
+Board [8h As 3h 5s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (450)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000019-210000019.txt ===
+PokerStars Hand #210000019: Tournament #2900000019, $0.25+$0.02 USD Hold'em No Limit - Level 10 (100/200) - 2023/01/15 17:19:00
+Table '2900000019 19' 9-max Seat #2 is the button
+Seat 1: Player1 (1120 in chips) 
+Seat 2: Player2 (1485 in chips) 
+Seat 3: Player3 (1610 in chips) 
+Player1: posts small blind 100
+Player2: posts big blind 200
+*** HOLE CARDS ***
+Dealt to Player1 [Ks Td]
+Player3: folds 
+Player1: calls 100
+Player2: checks 
+*** FLOP *** [5s As 5h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [5s As 5h] [3d]
+Player1: checks 
+Player2: bets 200
+Player1: folds 
+Uncalled bet (200) returned to Player2
+Player2 collected 500 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 500 | Rake 0 
+Board [5s As 5h 3d]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (500)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000020-210000020.txt ===
+PokerStars Hand #210000020: Tournament #2900000020, $0.25+$0.02 USD Hold'em No Limit - Level 1 (10/20) - 2023/01/15 18:20:00
+Table '2900000020 20' 6-max Seat #3 is the button
+Seat 1: Player1 (1100 in chips) 
+Seat 2: Player2 (1500 in chips) 
+Seat 3: Player3 (1600 in chips) 
+Player1: posts small blind 10
+Player2: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Player1 [4h 6c]
+Player3: folds 
+Player1: calls 10
+Player2: checks 
+*** FLOP *** [2d 8h 9d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2d 8h 9d] [4c]
+Player1: checks 
+Player2: bets 20
+Player1: folds 
+Uncalled bet (20) returned to Player2
+Player2 collected 50 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 50 | Rake 0 
+Board [2d 8h 9d 4c]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (50)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000021-210000021.txt ===
+PokerStars Hand #210000021: Tournament #2900000021, $0.25+$0.02 USD Hold'em No Limit - Level 2 (20/40) - 2023/01/15 19:21:00
+Table '2900000021 21' 9-max Seat #1 is the button
+Seat 1: Player1 (1080 in chips) 
+Seat 2: Player2 (1515 in chips) 
+Seat 3: Player3 (1590 in chips) 
+Player1: posts small blind 20
+Player2: posts big blind 40
+*** HOLE CARDS ***
+Dealt to Player1 [7h Kd]
+Player3: folds 
+Player1: calls 20
+Player2: checks 
+*** FLOP *** [As 9h Td]
+Player1: checks 
+Player2: checks 
+*** TURN *** [As 9h Td] [9d]
+Player1: checks 
+Player2: bets 40
+Player1: folds 
+Uncalled bet (40) returned to Player2
+Player2 collected 100 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 100 | Rake 0 
+Board [As 9h Td 9d]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (100)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000022-210000022.txt ===
+PokerStars Hand #210000022: Tournament #2900000022, $0.25+$0.02 USD Hold'em No Limit - Level 3 (30/60) - 2023/01/15 20:22:00
+Table '2900000022 22' 6-max Seat #2 is the button
+Seat 1: Player1 (1060 in chips) 
+Seat 2: Player2 (1530 in chips) 
+Seat 3: Player3 (1580 in chips) 
+Player1: posts small blind 30
+Player2: posts big blind 60
+*** HOLE CARDS ***
+Dealt to Player1 [5s Ks]
+Player3: folds 
+Player1: calls 30
+Player2: checks 
+*** FLOP *** [Js 7h As]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Js 7h As] [As]
+Player1: checks 
+Player2: bets 60
+Player1: folds 
+Uncalled bet (60) returned to Player2
+Player2 collected 150 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 150 | Rake 0 
+Board [Js 7h As As]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (150)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000023-210000023.txt ===
+PokerStars Hand #210000023: Tournament #2900000023, $0.25+$0.02 USD Hold'em No Limit - Level 4 (40/80) - 2023/01/15 21:23:00
+Table '2900000023 23' 9-max Seat #3 is the button
+Seat 1: Player1 (1040 in chips) 
+Seat 2: Player2 (1545 in chips) 
+Seat 3: Player3 (1570 in chips) 
+Player1: posts small blind 40
+Player2: posts big blind 80
+*** HOLE CARDS ***
+Dealt to Player1 [2d Qs]
+Player3: folds 
+Player1: calls 40
+Player2: checks 
+*** FLOP *** [Kd 3h 7s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Kd 3h 7s] [8h]
+Player1: checks 
+Player2: bets 80
+Player1: folds 
+Uncalled bet (80) returned to Player2
+Player2 collected 200 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 200 | Rake 0 
+Board [Kd 3h 7s 8h]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (200)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000024-210000024.txt ===
+PokerStars Hand #210000024: Tournament #2900000024, $0.25+$0.02 USD Hold'em No Limit - Level 5 (50/100) - 2023/01/15 10:24:00
+Table '2900000024 24' 6-max Seat #1 is the button
+Seat 1: Player1 (1020 in chips) 
+Seat 2: Player2 (1560 in chips) 
+Seat 3: Player3 (1560 in chips) 
+Player1: posts small blind 50
+Player2: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Player1 [9s 7c]
+Player3: folds 
+Player1: calls 50
+Player2: checks 
+*** FLOP *** [3d 8c Td]
+Player1: checks 
+Player2: checks 
+*** TURN *** [3d 8c Td] [Qc]
+Player1: checks 
+Player2: bets 100
+Player1: folds 
+Uncalled bet (100) returned to Player2
+Player2 collected 250 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 250 | Rake 0 
+Board [3d 8c Td Qc]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (250)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000025-210000025.txt ===
+PokerStars Hand #210000025: Tournament #2900000025, $0.25+$0.02 USD Hold'em No Limit - Level 6 (60/120) - 2023/01/15 11:25:00
+Table '2900000025 25' 9-max Seat #2 is the button
+Seat 1: Player1 (1000 in chips) 
+Seat 2: Player2 (1575 in chips) 
+Seat 3: Player3 (1550 in chips) 
+Player1: posts small blind 60
+Player2: posts big blind 120
+*** HOLE CARDS ***
+Dealt to Player1 [Qc 2h]
+Player3: folds 
+Player1: calls 60
+Player2: checks 
+*** FLOP *** [8d 5h 4s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [8d 5h 4s] [Ac]
+Player1: checks 
+Player2: bets 120
+Player1: folds 
+Uncalled bet (120) returned to Player2
+Player2 collected 300 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 300 | Rake 0 
+Board [8d 5h 4s Ac]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (300)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000026-210000026.txt ===
+PokerStars Hand #210000026: Tournament #2900000026, $0.25+$0.02 USD Hold'em No Limit - Level 7 (70/140) - 2023/01/15 12:26:00
+Table '2900000026 26' 6-max Seat #3 is the button
+Seat 1: Player1 (980 in chips) 
+Seat 2: Player2 (1590 in chips) 
+Seat 3: Player3 (1540 in chips) 
+Player1: posts small blind 70
+Player2: posts big blind 140
+*** HOLE CARDS ***
+Dealt to Player1 [7c 7d]
+Player3: folds 
+Player1: calls 70
+Player2: checks 
+*** FLOP *** [Qd 4c 7s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Qd 4c 7s] [Jc]
+Player1: checks 
+Player2: bets 140
+Player1: folds 
+Uncalled bet (140) returned to Player2
+Player2 collected 350 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 350 | Rake 0 
+Board [Qd 4c 7s Jc]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (350)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000027-210000027.txt ===
+PokerStars Hand #210000027: Tournament #2900000027, $0.25+$0.02 USD Hold'em No Limit - Level 8 (80/160) - 2023/01/15 13:27:00
+Table '2900000027 27' 9-max Seat #1 is the button
+Seat 1: Player1 (960 in chips) 
+Seat 2: Player2 (1605 in chips) 
+Seat 3: Player3 (1530 in chips) 
+Player1: posts small blind 80
+Player2: posts big blind 160
+*** HOLE CARDS ***
+Dealt to Player1 [8c 7d]
+Player3: folds 
+Player1: calls 80
+Player2: checks 
+*** FLOP *** [5s Jc 3d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [5s Jc 3d] [Ah]
+Player1: checks 
+Player2: bets 160
+Player1: folds 
+Uncalled bet (160) returned to Player2
+Player2 collected 400 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 400 | Rake 0 
+Board [5s Jc 3d Ah]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (400)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000028-210000028.txt ===
+PokerStars Hand #210000028: Tournament #2900000028, $0.25+$0.02 USD Hold'em No Limit - Level 9 (90/180) - 2023/01/15 14:28:00
+Table '2900000028 28' 6-max Seat #2 is the button
+Seat 1: Player1 (940 in chips) 
+Seat 2: Player2 (1620 in chips) 
+Seat 3: Player3 (1520 in chips) 
+Player1: posts small blind 90
+Player2: posts big blind 180
+*** HOLE CARDS ***
+Dealt to Player1 [7d 2h]
+Player3: folds 
+Player1: calls 90
+Player2: checks 
+*** FLOP *** [Qc 3c 2h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Qc 3c 2h] [Ah]
+Player1: checks 
+Player2: bets 180
+Player1: folds 
+Uncalled bet (180) returned to Player2
+Player2 collected 450 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 450 | Rake 0 
+Board [Qc 3c 2h Ah]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (450)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000029-210000029.txt ===
+PokerStars Hand #210000029: Tournament #2900000029, $0.25+$0.02 USD Hold'em No Limit - Level 10 (100/200) - 2023/01/15 15:29:00
+Table '2900000029 29' 9-max Seat #3 is the button
+Seat 1: Player1 (920 in chips) 
+Seat 2: Player2 (1635 in chips) 
+Seat 3: Player3 (1510 in chips) 
+Player1: posts small blind 100
+Player2: posts big blind 200
+*** HOLE CARDS ***
+Dealt to Player1 [Qh 2h]
+Player3: folds 
+Player1: calls 100
+Player2: checks 
+*** FLOP *** [Kd 7c 9d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [Kd 7c 9d] [6s]
+Player1: checks 
+Player2: bets 200
+Player1: folds 
+Uncalled bet (200) returned to Player2
+Player2 collected 500 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 500 | Rake 0 
+Board [Kd 7c 9d 6s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (500)
+Seat 3: Player3 folded before Flop (didn't bet)
+
+=== Session: HH2900000030-210000030.txt ===
+PokerStars Hand #210000030: Tournament #2900000030, $0.25+$0.02 USD Hold'em No Limit - Level 1 (10/20) - 2023/01/15 16:30:00
+Table '2900000030 30' 6-max Seat #1 is the button
+Seat 1: Player1 (900 in chips) 
+Seat 2: Player2 (1650 in chips) 
+Seat 3: Player3 (1500 in chips) 
+Player1: posts small blind 10
+Player2: posts big blind 20
+*** HOLE CARDS ***
+Dealt to Player1 [9s 4d]
+Player3: folds 
+Player1: calls 10
+Player2: checks 
+*** FLOP *** [2s 9c 3h]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2s 9c 3h] [Qh]
+Player1: checks 
+Player2: bets 20
+Player1: folds 
+Uncalled bet (20) returned to Player2
+Player2 collected 50 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 50 | Rake 0 
+Board [2s 9c 3h Qh]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (50)
+Seat 3: Player3 folded before Flop (didn't bet)
+

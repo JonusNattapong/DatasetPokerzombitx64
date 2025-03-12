@@ -1,0 +1,28 @@
+PokerStars Hand #210000006: Tournament #2900000006, $0.25+$0.02 USD Hold'em No Limit - Level 7 (70/140) - 2023/01/15 16:06:00
+Table '2900000006 6' 6-max Seat #1 is the button
+Seat 1: Player1 (1380 in chips) 
+Seat 2: Player2 (1290 in chips) 
+Seat 3: Player3 (1740 in chips) 
+Player1: posts small blind 70
+Player2: posts big blind 140
+*** HOLE CARDS ***
+Dealt to Player1 [Ah Qh]
+Player3: folds 
+Player1: calls 70
+Player2: checks 
+*** FLOP *** [7c Kh 2s]
+Player1: checks 
+Player2: checks 
+*** TURN *** [7c Kh 2s] [Qd]
+Player1: checks 
+Player2: bets 140
+Player1: folds 
+Uncalled bet (140) returned to Player2
+Player2 collected 350 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 350 | Rake 0 
+Board [7c Kh 2s Qd]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (350)
+Seat 3: Player3 folded before Flop (didn't bet)

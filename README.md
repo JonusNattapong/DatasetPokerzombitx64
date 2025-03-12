@@ -1,39 +1,39 @@
-# Pokerzombitx64 Dataset
+# ชุดข้อมูล Pokerzombitx64
 
-## Overview
-The Pokerzombitx64 dataset is a comprehensive collection of poker game data designed for analysis, machine learning, and strategy development. This repository contains structured poker hand histories, player statistics, and annotated game situations.
+## ภาพรวม
+ชุดข้อมูล Pokerzombitx64 เป็นคอลเลกชันข้อมูลเกมโป๊กเกอร์ที่ครอบคลุม ออกแบบมาสำหรับการวิเคราะห์ การเรียนรู้ของเครื่อง และการพัฒนากลยุทธ์ พื้นที่เก็บข้อมูลนี้ประกอบด้วยประวัติมือโป๊กเกอร์ที่มีโครงสร้าง สถิติผู้เล่น และสถานการณ์เกมที่มีคำอธิบายประกอบ
 
-## Dataset Structure
+## โครงสร้างชุดข้อมูล
 ```
 DatasetPokerzombitx64/
-├── raw_data/       # Unprocessed poker hand histories
-├── processed_data/ # Cleaned and formatted data ready for analysis
-├── metadata/       # Information about the dataset collection process
-├── examples/       # Example usage and analysis scripts
-└── docs/           # Additional documentation and explanations
+├── raw_data/       # ข้อมูลประวัติมือโป๊กเกอร์ที่ยังไม่ได้ประมวลผล
+├── processed_data/ # ข้อมูลที่ทำความสะอาดและจัดรูปแบบพร้อมสำหรับการวิเคราะห์
+├── metadata/       # ข้อมูลเกี่ยวกับกระบวนการรวบรวมชุดข้อมูล
+├── examples/       # ตัวอย่างการใช้งานและสคริปต์วิเคราะห์
+└── docs/           # เอกสารเพิ่มเติมและคำอธิบาย
 ```
 
-## Data Format
-Each poker hand is stored in a structured format that includes:
-- Hand ID and timestamp
-- Game type, stakes, and table information
-- Player positions and stack sizes
-- Complete action sequence (bets, raises, calls, folds)
-- Showdown results when applicable
+## รูปแบบข้อมูล
+แต่ละมือโป๊กเกอร์ถูกเก็บในรูปแบบที่มีโครงสร้างซึ่งประกอบด้วย:
+- รหัสมือและเวลา
+- ประเภทเกม, เงินเดิมพัน และข้อมูลโต๊ะ
+- ตำแหน่งผู้เล่นและขนาดชิพ
+- ลำดับการดำเนินการทั้งหมด (เดิมพัน, เพิ่มเดิมพัน, คอล, โฟลด์)
+- ผลลัพธ์ showdown เมื่อมี
 
-### Data Source
-The dataset is primarily compiled from `output.txt` files that contain poker hand histories. These text files are processed and converted into structured formats (CSV, JSON) for easier analysis. The original `output.txt` files are preserved in the raw_data directory.
+### แหล่งที่มาของข้อมูล
+ชุดข้อมูลนี้รวบรวมจากไฟล์ `output.txt` ที่มีประวัติมือโป๊กเกอร์ ไฟล์ข้อความเหล่านี้ได้รับการประมวลผลและแปลงเป็นรูปแบบที่มีโครงสร้าง (CSV, JSON) เพื่อการวิเคราะห์ที่ง่ายขึ้น ไฟล์ `output.txt` ต้นฉบับถูกเก็บรักษาไว้ในไดเรกทอรี raw_data
 
-## Usage
-This dataset can be used for:
-- Developing poker strategy algorithms
-- Training machine learning models for decision making
-- Analyzing player tendencies and game patterns
-- Simulating poker scenarios and outcomes
+## การใช้งาน
+ชุดข้อมูลนี้สามารถใช้สำหรับ:
+- พัฒนาอัลกอริธึมกลยุทธ์โป๊กเกอร์
+- ฝึกฝนโมเดลการเรียนรู้ของเครื่องสำหรับการตัดสินใจ
+- วิเคราะห์แนวโน้มของผู้เล่นและรูปแบบเกม
+- จำลองสถานการณ์โป๊กเกอร์และผลลัพธ์
 
-### Sample Data Table
+### ตารางข้อมูลตัวอย่าง
 
-| Hand ID | Player | Position | Stack | Action | Street | Amount | Pot Size |
+| รหัสมือ | ผู้เล่น | ตำแหน่ง | ชิพ | การกระทำ | รอบ | จำนวนเงิน | ขนาดหม้อ |
 |---------|--------|----------|-------|--------|--------|--------|----------|
 | H001    | Player1| BTN     | $100  | Raise  | Preflop| $3.5   | $5.0     |
 | H001    | Player2| SB      | $97   | Call   | Preflop| $2.5   | $5.0     |
@@ -43,36 +43,36 @@ This dataset can be used for:
 | H002    | Player3| CO      | $120  | Raise  | Preflop| $4.0   | $6.0     |
 | H002    | Player1| BTN     | $96.5 | Call   | Preflop| $4.0   | $10.0    |
 
-![images](sample_data/image.png)
+![ภาพ](sample_data/image.png)
 
 -------
 
 ![csv](sample_data/image0.png)
 
-## Getting Started
+## เริ่มต้นใช้งาน
 ```python
-# Example code to load and analyze the dataset
+# โค้ดตัวอย่างในการโหลดและวิเคราะห์ชุดข้อมูล
 import pandas as pd
 
-# Load hand history data
+# โหลดข้อมูลประวัติมือ
 hands = pd.read_csv('processed_data/hands.csv')
 
-# Basic statistics
-print(f"Total hands: {len(hands)}")
-print(f"Average pot size: ${hands['pot_size'].mean():.2f}")
+# สถิติพื้นฐาน
+print(f"มือทั้งหมด: {len(hands)}")
+print(f"ขนาดหม้อเฉลี่ย: ${hands['pot_size'].mean():.2f}")
 ```
 
-## Contributing
-Contributions to expand and improve the dataset are welcome! Please follow these steps:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request with a clear description of your changes
+## การมีส่วนร่วม
+ยินดีต้อนรับการมีส่วนร่วมในการขยายและปรับปรุงชุดข้อมูล! โปรดทำตามขั้นตอนเหล่านี้:
+1. Fork พื้นที่เก็บข้อมูล
+2. สร้าง feature branch
+3. ส่ง pull request พร้อมคำอธิบายการเปลี่ยนแปลงของคุณอย่างชัดเจน
 
-## License
-This dataset is available under [specify license type] - see LICENSE file for details.
+## ใบอนุญาต
+ชุดข้อมูลนี้มีให้ใช้ภายใต้ [ระบุประเภทใบอนุญาต] - ดูไฟล์ LICENSE สำหรับรายละเอียด
 
-## Contact
-For questions or feedback about this dataset, please contact [your contact information].
+## ติดต่อ
+สำหรับคำถามหรือข้อเสนอแนะเกี่ยวกับชุดข้อมูลนี้ โปรดติดต่อ [ข้อมูลติดต่อของคุณ]
 
-## Acknowledgements
-Special thanks to [mention any contributors or data sources if applicable].
+## กิตติกรรมประกาศ
+ขอบคุณเป็นพิเศษสำหรับ [กล่าวถึงผู้มีส่วนร่วมหรือแหล่งข้อมูลหากมี]

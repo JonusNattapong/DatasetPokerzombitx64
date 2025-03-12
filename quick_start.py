@@ -56,7 +56,7 @@ def main():
         sys.executable,
         str(base_dir / "process_data.py"),
         "--directory", str(hand_history_dir),
-        "--output", str(csv_output_path),
+        "--output_csv", str(csv_output_path),
         "--login", "Player1",
         "--pattern", "HH"
     ]

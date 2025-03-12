@@ -1,0 +1,28 @@
+PokerStars Hand #210000027: Tournament #2900000027, $0.25+$0.02 USD Hold'em No Limit - Level 8 (80/160) - 2023/01/15 13:27:00
+Table '2900000027 27' 9-max Seat #1 is the button
+Seat 1: Player1 (960 in chips) 
+Seat 2: Player2 (1605 in chips) 
+Seat 3: Player3 (1530 in chips) 
+Player1: posts small blind 80
+Player2: posts big blind 160
+*** HOLE CARDS ***
+Dealt to Player1 [8c 7d]
+Player3: folds 
+Player1: calls 80
+Player2: checks 
+*** FLOP *** [5s Jc 3d]
+Player1: checks 
+Player2: checks 
+*** TURN *** [5s Jc 3d] [Ah]
+Player1: checks 
+Player2: bets 160
+Player1: folds 
+Uncalled bet (160) returned to Player2
+Player2 collected 400 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 400 | Rake 0 
+Board [5s Jc 3d Ah]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (400)
+Seat 3: Player3 folded before Flop (didn't bet)

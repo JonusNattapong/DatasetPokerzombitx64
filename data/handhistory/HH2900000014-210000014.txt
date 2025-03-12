@@ -1,0 +1,28 @@
+PokerStars Hand #210000014: Tournament #2900000014, $0.25+$0.02 USD Hold'em No Limit - Level 5 (50/100) - 2023/01/15 12:14:00
+Table '2900000014 14' 6-max Seat #3 is the button
+Seat 1: Player1 (1220 in chips) 
+Seat 2: Player2 (1410 in chips) 
+Seat 3: Player3 (1660 in chips) 
+Player1: posts small blind 50
+Player2: posts big blind 100
+*** HOLE CARDS ***
+Dealt to Player1 [6h 5s]
+Player3: folds 
+Player1: calls 50
+Player2: checks 
+*** FLOP *** [2s 3d Qc]
+Player1: checks 
+Player2: checks 
+*** TURN *** [2s 3d Qc] [8s]
+Player1: checks 
+Player2: bets 100
+Player1: folds 
+Uncalled bet (100) returned to Player2
+Player2 collected 250 from pot
+Player2: doesn't show hand 
+*** SUMMARY ***
+Total pot 250 | Rake 0 
+Board [2s 3d Qc 8s]
+Seat 1: Player1 (small blind) folded on the Turn
+Seat 2: Player2 (big blind) collected (250)
+Seat 3: Player3 folded before Flop (didn't bet)
