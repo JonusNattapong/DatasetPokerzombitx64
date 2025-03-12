@@ -41,7 +41,12 @@ class Hand:
     }
     
     def __init__(self, cards_str: str):
-        card_strings = re.split(r"[\s,]+", cards_str.strip())
+        # Handle input strings without delimiters by splitting every 2 characters
+        if " " not in cards_str and "," not in cards_str:
+            card_strings = [cards_str[i:i+2] for i in range(0, len(cards_str), 2)]
+        else:
+            card_strings = re.split(r"[\s,]+", cards_str.strip())
+        
         self.cards = [Card(card) for card in card_strings if len(card) == 2]
         if len(self.cards) < 2:
             raise ValueError(f"Not enough valid cards in: {cards_str}")
@@ -55,21 +60,48 @@ class Hand:
     def _find_straight(self, cards: List[Card]) -> Optional[List[Card]]:
         if len(cards) < 5:
             return None
-        values = sorted(set(c.rank_value for c in cards), reverse=True)
-        if 14 in values and {2, 3, 4, 5}.issubset(set(values)):
-            wheel = [next(c for c in cards if c.rank_value == v) for v in [5, 4, 3, 2, 14]]
-            return sorted(wheel, key=lambda x: x.rank_value)
-        for i in range(len(values) - 4):
-            if values[i] - values[i+4] == 4:
-                straight = [next(c for c in cards if c.rank_value == v) for v in values[i:i+5]]
-                return sorted(straight, key=lambda x: x.rank_value, reverse=True)
+
+        # Get unique rank values
+        values = set(c.rank_value for c in cards)
+        
+        # Get all values in descending order
+        sorted_values = sorted(values, reverse=True)
+        
+        # Look for 5 consecutive values
+        for high_value in range(14, 4, -1):  # Check from Ace down to 5
+            needed = list(range(high_value, high_value-5, -1))  # 5 consecutive values
+            if all(v in values for v in needed):  # Check if we have all needed values
+                straight = []
+                # Build straight from highest to lowest using exactly these values
+                for v in needed:
+                    straight.append(next(c for c in cards if c.rank_value == v))
+                return straight  # Return first straight found (will be highest possible)
+            
+        # After checking for regular straights, check for wheel straight (A-5)
+        wheel_values = [5, 4, 3, 2, 14]  # Values in A-5 straight
+        if all(v in values for v in wheel_values):
+            wheel = []
+            # Build wheel straight with correct order (5-high)
+            for v in wheel_values[:-1]:  # Add 5,4,3,2 first
+                wheel.append(next(c for c in cards if c.rank_value == v))
+            wheel.append(next(c for c in cards if c.rank_value == 14))  # Add Ace last
+            return wheel  # Return wheel since we've already tried higher straights
+            
         return None
 
     def evaluate(self, board_str: Optional[str] = None) -> Tuple[str, List[Card], int]:
+        """Evaluate a poker hand.
+        Returns:
+        - hand_name: String name of the hand (e.g. 'straight', 'flush')
+        - best_cards: List of 5 cards that make up the best hand
+        - strength: Integer ranking of the hand (higher is better)
+        """
         all_cards = self.cards.copy()
         if board_str:
             board = Hand(board_str)
             all_cards.extend(board.cards)
+            
+        print(f"\nEvaluating hand {self.cards} with board {board_str}")
         
         all_cards.sort(key=lambda x: x.rank_value, reverse=True)
         suits = {}
@@ -88,10 +120,15 @@ class Hand:
                         return ("royal_flush", straight_flush, self.HAND_RANKS["royal_flush"])
                     return ("straight_flush", straight_flush, self.HAND_RANKS["straight_flush"])
         
+        # Check for flush and straight
         straight = self._find_straight(all_cards)
+        
+        # Return hands in order of rank
         if flush:
+            # Flush is higher ranked than straight
             return ("flush", flush, self.HAND_RANKS["flush"])
         if straight:
+            print(f"Found straight: {[str(c) for c in straight]}")
             return ("straight", straight, self.HAND_RANKS["straight"])
             
         ranks = {}
@@ -154,20 +191,71 @@ def analyze_hand(hand_str: str, board_str: Optional[str] = None) -> Dict:
         }
 
 def compare_hands(hand1_str: str, hand2_str: str, board_str: Optional[str] = None) -> int:
+    print(f"\nComparing hands:\nHand 1: {hand1_str}\nHand 2: {hand2_str}\nBoard: {board_str}")
+    """
+    Compare two poker hands and return:
+     1 if hand1 wins
+    -1 if hand2 wins
+     0 if it's a tie
+    
+    Also handles invalid input more gracefully
+    """
     try:
+        # Create Hand objects
         hand1 = Hand(hand1_str)
         hand2 = Hand(hand2_str)
         
+        # Evaluate both hands
         name1, cards1, strength1 = hand1.evaluate(board_str)
+        print(f"Hand 1 evaluated as: {name1} (strength {strength1})")
+        print(f"Best cards: {[str(c) for c in cards1]}")
+        
         name2, cards2, strength2 = hand2.evaluate(board_str)
+        print(f"Hand 2 evaluated as: {name2} (strength {strength2})")
+        print(f"Best cards: {[str(c) for c in cards2]}")
         
+        # First compare hand strengths
         if strength1 != strength2:
-            return 1 if strength1 > strength2 else -1
-            
-        for card1, card2 in zip(cards1, cards2):
-            if card1.rank_value != card2.rank_value:
-                return 1 if card1.rank_value > card2.rank_value else -1
+            result = 1 if strength1 > strength2 else -1
+            print(f"Different strengths: {strength1} vs {strength2}, returning {result}")
+            return result
         
+        # For same strength hands, handle special cases
+        if name1 == "straight" and name2 == "straight":
+            # For straights, we need to compare the highest card in each straight
+            # Get the highest card in each straight (normally the first card)
+            high_card1 = max(cards1, key=lambda c: c.rank_value)
+            high_card2 = max(cards2, key=lambda c: c.rank_value)
+            
+            # Special case: A-5 straight (wheel) has Ace as the lowest card
+            is_wheel1 = set(c.rank_value for c in cards1) == set([14, 5, 4, 3, 2])
+            is_wheel2 = set(c.rank_value for c in cards2) == set([14, 5, 4, 3, 2])
+            
+            # A wheel straight is the lowest straight (5-high)
+            if is_wheel1 and not is_wheel2:
+                return -1
+            elif not is_wheel1 and is_wheel2:
+                return 1
+            elif is_wheel1 and is_wheel2:
+                return 0  # Both are wheels
+            
+            # For regular straights, compare the highest card
+            if high_card1.rank_value != high_card2.rank_value:
+                return 1 if high_card1.rank_value > high_card2.rank_value else -1
+            return 0
+        else:
+            # For other hands, compare cards in order
+            for card1, card2 in zip(cards1, cards2):
+                if card1.rank_value != card2.rank_value:
+                    return 1 if card1.rank_value > card2.rank_value else -1
+        
+        # If we get here, it's a true tie
         return 0
-    except Exception:
-        return 0
+        
+    except ValueError as e:
+        # Handle invalid card format
+        raise ValueError(f"Invalid hand format: {str(e)}")
+    except Exception as e:
+        # Log unexpected errors but don't expose internals
+        print(f"Error comparing hands: {str(e)}")
+        raise ValueError("Error comparing hands")

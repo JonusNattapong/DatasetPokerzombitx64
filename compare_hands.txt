@@ -1,0 +1,34 @@
+
+def compare_hands(hand1_str: str, hand2_str: str, board_str: Optional[str] = None) -> int:
+    """Compare two poker hands.
+    
+    Args:
+        hand1_str: First hand in format like "As Kh"
+        hand2_str: Second hand in format like "Qd Jd"
+        board_str: Optional board cards
+        
+    Returns:
+        1 if hand1 wins, -1 if hand2 wins, 0 if tie
+    """
+    try:
+        # Fix potential string concatenation issues
+        hand1_fixed = " ".join(re.findall(r"[AKQJT2-9][cdhs]", hand1_str))
+        hand2_fixed = " ".join(re.findall(r"[AKQJT2-9][cdhs]", hand2_str))
+        
+        hand1 = Hand(hand1_fixed)
+        hand2 = Hand(hand2_fixed)
+        
+        _, cards1, strength1 = hand1.evaluate(board_str)
+        _, cards2, strength2 = hand2.evaluate(board_str)
+        
+        if strength1 != strength2:
+            return -1 if strength2 > strength1 else 1
+        
+        for c1, c2 in zip(cards1, cards2):
+            if c1.rank_value != c2.rank_value:
+                return -1 if c2.rank_value > c1.rank_value else 1
+        
+        return 0
+    
+    except Exception:
+        return 0

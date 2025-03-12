@@ -36,13 +36,53 @@ class TestCardEvaluator(unittest.TestCase):
     
     def test_hand_creation(self):
         """Test hand creation and properties."""
+        # Standard space-separated format
         hand = Hand('As Ks')
+        self.assertEqual(len(hand.cards), 2)
+        self.assertEqual(str(hand), "As Ks")
+        
+        # No delimiter format
+        hand = Hand('AsKs')
+        self.assertEqual(len(hand.cards), 2)
+        self.assertEqual(str(hand), "As Ks")
+        
+        # Comma-separated format
+        hand = Hand('As,Ks')
+        self.assertEqual(len(hand.cards), 2)
+        self.assertEqual(str(hand), "As Ks")
+        
+        # Mixed format
+        hand = Hand('As, Ks')
         self.assertEqual(len(hand.cards), 2)
         self.assertEqual(str(hand), "As Ks")
         
         with self.assertRaises(ValueError):
             Hand('')  # Empty hand
+            
+        with self.assertRaises(ValueError):
+            Hand('AsK')  # Invalid format - odd length
     
+    def test_straights(self):
+        """Test straight detection and ordering."""
+        # Regular straight
+        hand = Hand('9c 8d')
+        hand_name, cards, _ = hand.evaluate('7h 6s 5c')
+        self.assertEqual(hand_name, 'straight')
+        # Verify order (highest to lowest)
+        self.assertEqual([c.rank_value for c in cards], [9, 8, 7, 6, 5])
+        
+        # Wheel straight (A-5)
+        hand = Hand('Ac 5d')
+        hand_name, cards, _ = hand.evaluate('4h 3s 2c')
+        self.assertEqual(hand_name, 'straight')
+        # In wheel straight, Ace should be at the end
+        self.assertEqual([c.rank_value for c in cards], [5, 4, 3, 2, 14])
+        
+        # Almost straight
+        hand = Hand('9c 8d')
+        hand_name, _, _ = hand.evaluate('7h 6s 4c')
+        self.assertNotEqual(hand_name, 'straight')
+        
     def test_hand_evaluation(self):
         """Test hand evaluation."""
         # Royal flush
@@ -120,8 +160,10 @@ class TestCardEvaluator(unittest.TestCase):
         # Hand1 wins (royal flush vs straight flush)
         self.assertEqual(compare_hands('As Ks', '9s 8s', 'Qs Js Ts 7s 6s'), 1)
         
-        # Hand2 wins (straight vs pair)
-        self.assertEqual(compare_hands('Ac Kd', '9c 8d', 'Qh Js Ts'), -1)
+        # Hand1 wins (Broadway straight vs Queen-high straight)
+        hand1, hand2, board = 'Ac Kd', '9c 8d', 'Qh Js Ts'
+        result = compare_hands(hand1, hand2, board)
+        self.assertEqual(result, 1, f"{hand1} should win against {hand2} with board {board}")
         
         # Equal hands
         self.assertEqual(compare_hands('Ac Kd', 'Ah Ks', 'Qh Js Ts 2c 3d'), 0)
