@@ -1,3 +1,60 @@
+# PokerData
+
+A Python package for processing and analyzing poker hand history files.
+
+## Features
+
+- Fast processing with parallelized operations
+- Clean, structured data output
+- Support for anonymizing player identities
+- Installable as a Python package
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+### Command Line
+
+```bash
+# Basic usage
+process-poker-data --login YourPokerStarsUsername --directory /path/to/handhistory --output results.csv
+
+# With anonymization
+process-poker-data --login YourPokerStarsUsername --anonymize
+
+# With custom parallelization
+process-poker-data --login YourPokerStarsUsername --workers 4
+```
+
+### Python API
+
+```python
+from pokerdata import load_data, build_dataset
+
+# Load data
+my_login = "YourPokerStarsUsername"
+data = load_data("hand", directory="./handhistory")
+
+# Build dataset
+df = build_dataset(data, my_login)
+
+# Save to CSV
+df.to_csv("results.csv", index=False)
+```
+
+## Data Anonymization
+
+```python
+from pokerdata import anonymize_dataset
+
+# Anonymize player names
+df = anonymize_dataset(df, columns_to_mask=['name'])
+```
+
 ## Dataset building
 
 ### V2
