@@ -1,10 +1,9 @@
 import tensorflow as tf
 import numpy as np
 from typing import Dict
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Embedding, InputLayer
-from tensorflow.keras.callbacks import EarlyStopping
-
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Dropout, Embedding, InputLayer
+from tensorflow.python.keras.callbacks import EarlyStopping
 class PokerActionNN:
     """Neural network model for poker action prediction"""
     

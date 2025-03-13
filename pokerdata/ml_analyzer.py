@@ -17,11 +17,11 @@ logger = logging.getLogger(__name__)
 # Try to import TensorFlow, but handle the case where it's not installed
 try:
     import tensorflow as tf
-    from tensorflow.keras.models import Sequential, load_model, save_model
-    from tensorflow.keras.layers import Dense, Dropout, Embedding, InputLayer, LSTM, GRU, Conv1D, MaxPooling1D, Flatten
-    from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-    from tensorflow.keras.optimizers import Adam
-    from tensorflow.keras.utils import to_categorical
+    from tensorflow.python.keras.models import Sequential, load_model, save_model
+    from tensorflow.python.keras.layers import Dense, Dropout, Embedding, InputLayer, LSTM, GRU, Conv1D, MaxPooling1D, Flatten
+    from tensorflow.python.keras.callbacks import EarlyStopping, ModelCheckpoint
+    from tensorflow.python.keras.utils import to_categorical
+    from tensorflow.python.keras.optimizers import Adam
     TENSORFLOW_AVAILABLE = True
     logger.info("TensorFlow is available and imported successfully.")
 except ImportError:
@@ -105,7 +105,7 @@ class PokerMLAnalyzer:
         
         return prep_df, feature_cols
     
-    def build_action_prediction_model(self, input_dim: int) -> Sequential:
+    def build_action_prediction_model(self, input_dim: int) -> 'Sequential':
         """
         Build a neural network model to predict player actions.
         

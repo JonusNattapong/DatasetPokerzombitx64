@@ -605,9 +605,12 @@ class StreamingHandHistoryParser:
                     continue
 
                 # More robust action extraction, capturing amount separately
-                action_match = re.search(r"(.+?):\s*(posts|bets|raises|calls|folds|checks|shows|mucks)(?:\s*\$?(\d+)(?:\s*to\s*\$?(\d+))?)?", line)
+                # Debug logging
+                print(f"Processing line: {line}")
+                action_match = re.search(r"(.+?):\s*(posts|bets|raises|calls|folds|checks|shows|mucks)(?:\s*(?:small blind|big blind)?)?\s*(?:\$?(\d+)(?:\s*to\s*\$?(\d+))?)?", line)
                 if action_match:
                     player, action, value, to_value = action_match.groups()
+                    print(f"Match groups: player={player}, action={action}, value={value}, to_value={to_value}")
                     data = {
                         "hand_id": hand_id,
                         "player": player.strip(),
@@ -619,8 +622,10 @@ class StreamingHandHistoryParser:
                         try:
                             amount = int(to_value) if to_value is not None else int(value)
                             data["value"] = amount
+                            print(f"Set value to: {amount}")
                         except (ValueError, TypeError):
                             data["value"] = (to_value or value).strip()  # Fallback
+                            print(f"Using fallback value: {data['value']}")
                     self.hand_data.append(data)
         except Exception as e:
             logger.error(f"Error parsing hand: {e}, Hand data: {self.current_hand}")
