@@ -7,11 +7,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Optional, Dict, List, Union, Tuple
 import os
-
+import matplotlib
+matplotlib.use('Agg') # Use a non-interactive backend
 
 class PokerVisualizer:
     """Class for creating poker data visualizations."""
-    
+
     def __init__(self, df: pd.DataFrame, save_dir: Optional[str] = None):
         """
         Initialize the visualizer with poker data.
@@ -342,6 +343,54 @@ class PokerVisualizer:
         if filename is None and self.save_dir:
             filename = f"player_stats_{metric}.png"
         
+        self._save_or_show(filename)
+
+    def plot_game_table(self, players: List[Tuple[str, int]], cards: List[Tuple[str, str]], 
+                        dealer_position: int, filename: Optional[str] = None):
+        """
+        Plot a simple text-based representation of the poker table.
+
+        Args:
+            players: List of (player_name, seat_number) tuples
+            cards: List of (card1, card2) tuples for each player
+            dealer_position: Seat number of the dealer
+            filename: Filename to save plot
+        """
+        fig, ax = plt.subplots(figsize=(12, 6))
+        ax.axis('off')  # Hide axes
+
+        table_text = "Poker Table:\n\n"
+
+        for i, (player_name, seat) in enumerate(players):
+            table_text += f"Seat {seat} ({'D' if seat == dealer_position else ' '}): {player_name} - "
+            if i < len(cards):
+                table_text += f"{cards[i][0]}, {cards[i][1]}\n"
+            else:
+                table_text += "No Cards\n"
+
+        ax.text(0.5, 0.5, table_text, fontsize=14, ha='center', va='center')
+        plt.title("Poker Table Visualization")
+
+        if filename is None and self.save_dir:
+            filename = "poker_table.png"
+
+        self._save_or_show(filename)
+        
+    def plot_game_table_simple(self, filename: Optional[str] = None):
+        """
+        Plot a simple text message.
+        """
+        fig, ax = plt.subplots(figsize=(12, 6))
+        ax.axis('off')  # Hide axes
+
+        table_text = "Test Message"
+
+        ax.text(0.5, 0.5, table_text, fontsize=14, ha='center', va='center')
+        plt.title("Poker Table Visualization")
+
+        if filename is None and self.save_dir:
+            filename = "poker_table_simple.png"
+
         self._save_or_show(filename)
 
 

@@ -3,13 +3,14 @@ Unit tests for the parser module.
 """
 
 import unittest
+import unittest
 import os
 import pandas as pd
 import tempfile
 from pokerdata.parser import (
     tourn_id, table_number, hand, chairs, get_board, get_combination,
     buyin, get_date_time, get_button, level, get_cards, initial_stack,
-    bets, uncalled
+    bets, uncalled, StreamingHandHistoryParser
 )
 
 
@@ -100,3 +101,53 @@ class TestParserFunctions(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class TestStreamingHandHistoryParser(unittest.TestCase):
+    """Test cases for the StreamingHandHistoryParser class."""
+
+    def test_process_line(self):
+        parser = StreamingHandHistoryParser()
+        parser.process_line("PokerStars Hand #12345: Hold'em No Limit ($1/$2)")
+        parser.process_line("Table 'MyTable' 6-max Seat #1 is the button")
+        parser.process_line("Seat 1: Player1 ($200 in chips)")
+        parser.process_line("Seat 2: Player2 ($100 in chips)")
+        parser.process_line("Player1: posts small blind $1")
+        parser.process_line("Player2: posts big blind $2")
+        parser.process_line("*** HOLE CARDS ***")
+        parser.process_line("Dealt to Player1 [Ah Ad]")
+        parser.process_line("Player1: raises $4 to $6")
+        parser.process_line("Player2: folds")
+        parser.process_line("*** SUMMARY ***")
+        parser.process_line("Total pot $7 | Rake $0")
+
+        data = parser.get_parsed_data()
+        self.assertIsInstance(data, list)
+        self.assertEqual(len(data), 4)
+        self.assertEqual(data[0]["player"], "Player1")
+        self.assertEqual(data[0]["action"], "posts")
+        self.assertEqual(data[0]["value"], 1)
+        self.assertEqual(data[1]["player"], "Player2")
+        self.assertEqual(data[1]["action"], "posts")
+        self.assertEqual(data[1]["value"], 2)
+        self.assertEqual(data[2]["player"], "Player1")
+        self.assertEqual(data[2]["action"], "raises")
+        self.assertEqual(data[2]["value"], 6)
+        self.assertEqual(data[3]["player"], "Player2")
+        self.assertEqual(data[3]["action"], "folds")
+        self.assertNotIn("value", data[3]) # Folds should not have a value
+
+
+    def test_process_line_multiple_hands(self):
+        parser = StreamingHandHistoryParser()
+        parser.process_line("PokerStars Hand #12345: Hold'em No Limit ($1/$2)")
+        parser.process_line("Player1: posts small blind $1")
+        parser.process_line("*** SUMMARY ***")
+        parser.process_line("PokerStars Hand #67890: Hold'em No Limit ($1/$2)")
+        parser.process_line("Player2: posts big blind $2")
+        parser.process_line("*** SUMMARY ***")
+
+        data = parser.get_parsed_data()
+        self.assertEqual(len(data), 1)
+        self.assertEqual(data[0]["player"], "Player2")
+        self.assertEqual(data[0]["hand_id"], "67890")

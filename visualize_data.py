@@ -7,7 +7,6 @@ import argparse
 import pandas as pd
 from pokerdata import PokerVisualizer, generate_all_visualizations
 
-
 def main():
     """Main function to generate poker data visualizations."""
     parser = argparse.ArgumentParser(description='Generate poker data visualizations.')
@@ -18,7 +17,7 @@ def main():
                        help='Directory to save visualizations')
     parser.add_argument('--player', '-p', type=str,
                        help='Filter visualizations by player name')
-    parser.add_argument('--type', '-t', type=str, choices=['balance', 'actions', 'position', 'hands', 'all'],
+    parser.add_argument('--type', '-t', type=str, choices=['balance', 'actions', 'position', 'hands', 'table', 'all'],
                        default='all', help='Type of visualization to generate')
     
     args = parser.parse_args()
@@ -46,12 +45,16 @@ def main():
             visualizer.plot_position_winrate(player=args.player)
         elif args.type == 'hands':
             visualizer.plot_hand_strength_distribution(player=args.player)
+        elif args.type == 'table':
+            # Example player and card data
+            players = [("Player1", 0), ("Player2", 1), ("Player3", 2)]
+            cards = [("As", "Kd"), ("Qc", "Jh"), ("7s", "8d")]
+            visualizer.plot_game_table(players, cards, dealer_position=0)
         
         print(f"Visualizations saved to {args.output}")
-        
+
     except Exception as e:
         print(f"Error: {str(e)}")
-
 
 if __name__ == "__main__":
     main()

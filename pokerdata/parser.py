@@ -7,10 +7,14 @@ import re
 import pandas as pd
 import numpy as np
 import glob
+import logging
+
+# Configure logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple, Union, Any
-
 
 def load_data(pattern: str, directory: str = './') -> List[List[Dict]]:
     """
@@ -555,3 +559,77 @@ def uncalled(line: str) -> float:
     """Extract uncalled bet amount"""
     match = re.search(r'\((\d+)\)', line)
     return float(match.group(1)) if match else 0
+
+
+class StreamingHandHistoryParser:
+    """
+    Parses poker hand history from a streaming input (e.g., a file being written to).
+    """
+
+    def __init__(self):
+        """
+        Initialize the streaming parser.
+        """
+        self.current_hand = []
+        self.hand_data = []
+
+    def process_line(self, line: str):
+        """
+        Processes a single line of hand history.
+
+        Args:
+            line: A single line of hand history text.
+        """
+        self.current_hand.append(line)
+
+        if "PokerStars Hand #" in line:
+            # New hand starting, clear previous hand data
+            self.current_hand = [line]
+            self.hand_data = []
+
+        if "*** SUMMARY ***" in line:
+            # End of hand, parse the complete hand
+            self._parse_current_hand()
+
+    def _parse_current_hand(self):
+        """
+        Parses the current hand data (internal method).
+        """
+        try:
+            hand_id_match = re.search(r"PokerStars Hand #(\d+):", self.current_hand[0])
+            hand_id = hand_id_match.group(1) if hand_id_match else "Unknown"
+
+            for line in self.current_hand:
+                # Exclude "Seat" lines, Hand ID lines and Table info
+                if line.strip().startswith("Seat") or "PokerStars Hand #" in line or "Table '" in line:
+                    continue
+
+                # More robust action extraction, capturing amount separately
+                action_match = re.search(r"(.+?):\s*(posts|bets|raises|calls|folds|checks|shows|mucks)(?:\s*\$?(\d+)(?:\s*to\s*\$?(\d+))?)?", line)
+                if action_match:
+                    player, action, value, to_value = action_match.groups()
+                    data = {
+                        "hand_id": hand_id,
+                        "player": player.strip(),
+                        "action": action.strip(),
+                        "line": line
+                    }
+                    if value is not None or to_value is not None:
+                        # Use 'to_value' for raises, otherwise use 'value'
+                        try:
+                            amount = int(to_value) if to_value is not None else int(value)
+                            data["value"] = amount
+                        except (ValueError, TypeError):
+                            data["value"] = (to_value or value).strip()  # Fallback
+                    self.hand_data.append(data)
+        except Exception as e:
+            logger.error(f"Error parsing hand: {e}, Hand data: {self.current_hand}")
+
+    def get_parsed_data(self):
+        """
+        Retrieves the parsed hand data.
+
+        Returns:
+            The parsed hand data.
+        """
+        return self.hand_data

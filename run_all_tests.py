@@ -26,4 +26,5 @@ def run_tests():
 
 
 if __name__ == "__main__":
-    sys.exit(run_tests())
+    result = run_tests()
+    sys.exit(result)
